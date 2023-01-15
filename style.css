@@ -32,6 +32,7 @@ header .top_header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
 }
 header .right_header a{
     text-decoration: none;
@@ -292,4 +293,86 @@ header .right_header a:last-child{
     }
     footer {
         padding: 30px 0 150px 0;
+    }
+    /* responsive */
+    @media only screen and (max-width: 576px){
+        *{
+            margin: 0 auto;
+        }
+        p{
+            line-height: 16px;
+        }
+        h2{
+            font-size: 25px;
+        }
+        header .right_header a {
+            padding-right: 5px;
+        }
+        .menu h2 {
+            text-align: center;
+            color: #131313;
+            font-size: 44px;
+            font-weight: 700;
+        }
+        .menu .btn button {
+            padding: 10px 13px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .quick_section .main_column {
+            flex-direction: column;
+        }
+        .quick_section .left_column .img_grid {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        .quick_section .right_column h2 {
+            font-size: 30px;
+        }
+        .quick_section .right_column .btn button {
+            padding: 12px 20px;
+            border-radius: 3px;
+            margin: 13px 0;
+        }
+        .quick_section {
+            padding: 60px 0;
+        }
+        .features_section .right_column img {
+            width: 100%;
+        }
+        .features_section .main_column {
+            flex-direction: column;
+        }
+        .features_section .right_column button h5 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .Some_Facts .main_column {
+            flex-direction: column;
+        }
+        .Some_Facts {
+            padding: 15px 0 40px 0;
+        }
+        .our .main_column {
+            padding: 30px 0;
+            flex-direction: column;
+        }
+        .our .main_column .icons {
+            margin-bottom: 10px;
+        }
+        .feedback {
+            padding-bottom: 50px;
+            padding-top: 10px;
+        }
+        .feedback #text {
+            padding: 30px 100px;
+        }
+        footer .container p {
+            padding: 17px 0;
+            font-size: 10px;
+        }
+        footer {
+            padding: 30px 0 90px 0;
+        }
     }

@@ -4,8 +4,135 @@
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
-.container{
+body .container{
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 25px;
 }
+/* header */
+header{
+    background-color: #fff4e7;
+}
+header .left_header{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+header .top_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .right_header a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 45px;
+}
+header .right_header a:last-child{
+    padding-right: 0px;
+}
+.menu{
+    padding-top: 100px;
+}
+.menu h2{
+    text-align: center;
+    color: #131313;
+    font-size: 64px;
+    font-weight: 700;
+}
+.menu p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    text-align: center;
+    padding-top: 20px;
+}
+.menu .btn{
+    display: flex;
+    justify-content: center;
+}
+.menu .btn button {
+    border: none;
+    background: #FF900E;
+    padding: 20px 30px;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0;
+    transition: .4s;
+}
+.menu .btn button:hover{
+    background: #727272;
+    color: #FF900E;
+}
+.menu img{
+    width: 100%;
+    padding-bottom: 50px;
+}
+/* quick section */
+.quick_section{
+    padding: 100px 0;
+}
+.quick_section .main_column{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.quick_section .left_column{
+    width: 70%;
+    margin-right: 5%;
+}
+.quick_section .left_column .img_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.quick_section .left_column .img_grid img{
+    width: 100%;
+}
+.quick_section .right_column{
+    width: 25%;
+}
+.quick_section .right_column h2{
+    font-size: 45px;
+    font-weight: 600;
+    
+}
+.quick_section .right_column h2 #of{
+    color:#727272 ;
+}
+.quick_section .right_column h2 #Features{
+    color: #FF900E;
+}
+.quick_section .right_column p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    padding-top: 20px;
+}
+.quick_section .right_column .btn{
+    display: flex;
+    justify-content: center;
+}
+.quick_section .right_column .btn button{
+        border: none;
+        background: #FF900E;
+        padding: 20px 30px;
+        border-radius: 7px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 30px 0;
+        transition: .4s;
+    }
+    .quick_section .right_column .btn button:hover{
+        background: #727272;
+        color: #FF900E;
+    }
+    .quick_section .right_column .center_column{
+        position: relative;
+        top: 30%;
+    }
+
